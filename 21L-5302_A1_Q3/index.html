@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <legend>Personal Information</legend>
+      <div class="personal-info">
+        <label for="first_name">Full Name</label>
+        <input type="text" name="first_name" placeholder="First Name" />
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" placeholder="Last Name" />
+        <label for="phone_number">Phone Number</label>
+        <input type="text" name="phone_number" placeholder="Phone Number" />
+        <label for="email_addr">Email Address</label>
+        <input type="text" name="email_addr" placeholder="Email Address" />
+        <label for="address">Address</label>
+        <input type="text" name="address" placeholder="Address" />
+      </div>
+      <legend>Resume and Cover Letter</legend>
+      <div class="personal-info">
+        <label for="resume">Upload Resume</label>
+        <input type="file" name="Resume" placeholder="Resume" />
+        <label for="cover_letter">Cover Letter</label>
+        <textarea
+          name="cover_letter"
+          id="cover_letter"
+          cols="30"
+          rows="10"
+          placeholder="Cover Letter"
+        ></textarea>
+      </div>
+      <legend>Education</legend>
+      <div class="personal-info">
+        <label for="education_level">Education Level</label>
+        <select name="education_level" id="education_level">
+          <option value="PHD">PHD</option>
+        </select>
+        <label for="name_school">Name of School/University</label>
+        <input
+          type="text"
+          name="name_school"
+          id="name_school"
+          placeholder="Name of School/University"
+        />
+        <label for="major">Major/Area of Study</label>
+        <input
+          type="text"
+          name="major"
+          id="major"
+          placeholder="Major/Area of Study"
+        />
+        <label for="graduation_year">Graduation Year</label>
+        <input
+          type="text"
+          name="graduation_year"
+          id="graduation_year"
+          placeholder="graduation_year"
+        />
+        <label for="employment_history">Employment History</label>
+        <input
+          type="text"
+          name="employment_history"
+          id="employment_history"
+          placeholder="Employment History"
+        />
+      </div>
+      <!-- Additional Sections and Fields -->
+      <legend>Previous Job Titles</legend>
+      <div class="personal-info">
+        <label for="previous_job_titles">Previous Job Titles</label>
+        <input
+          type="text"
+          name="previous_job_titles"
+          id="previous_job_titles"
+          placeholder="Previous Job Titles"
+        />
+        <label for="company_names">Company Names</label>
+        <input
+          type="text"
+          name="company_names"
+          id="company_names"
+          placeholder="Company Names"
+        />
+        <label for="employment_dates">Employment Dates</label>
+        <input
+          type="text"
+          name="employment_dates"
+          id="employment_dates"
+          placeholder="Employment Dates"
+        />
+        <label for="job_responsibilities">Job Responsibilities</label>
+        <input
+          type="text"
+          name="job_responsibilities"
+          id="job_responsibilities"
+          placeholder="Job Responsibilities"
+        />
+      </div>
+      <legend>Skills</legend>
+      <div class="personal-info">
+        <label for="relevant_skills">Relevant Skills</label>
+        <input
+          type="text"
+          name="relevant_skills"
+          id="relevant_skills"
+          placeholder="Relevant Skills (e.g., programming languages, software proficiency)"
+        />
+        <label for="certifications">Certifications</label>
+        <input
+          type="text"
+          name="certifications"
+          id="certifications"
+          placeholder="Certifications"
+        />
+      </div>
+      <legend>Availability</legend>
+      <div class="personal-info">
+        <label for="start_date">Start Date</label>
+        <input
+          type="text"
+          name="start_date"
+          id="start_date"
+          placeholder="Start Date"
+        />
+        <label for="preferred_work_schedule">Preferred Work Schedule</label>
+        <input
+          type="text"
+          name="preferred_work_schedule"
+          id="preferred_work_schedule"
+          placeholder="Preferred Work Schedule"
+        />
+        <label for="willingness_to_relocate">Willingness to Relocate</label>
+        <input
+          type="text"
+          name="willingness_to_relocate"
+          id="willingness_to_relocate"
+          placeholder="Willingness to Relocate"
+        />
+      </div>
+      <legend>References</legend>
+      <div class="personal-info">
+        <label for="reference_name">Reference Name</label>
+        <input
+          type="text"
+          name="reference_name"
+          id="reference_name"
+          placeholder="Reference Name"
+        />
+        <label for="reference_contact_info"
+          >Reference Contact Information</label
+        >
+        <input
+          type="text"
+          name="reference_contact_info"
+          id="reference_contact_info"
+          placeholder="Reference Contact Information"
+        />
+        <label for="relationship_to_applicant">Relationship to Applicant</label>
+        <input
+          type="text"
+          name="relationship_to_applicant"
+          id="relationship_to_applicant"
+          placeholder="Relationship to Applicant"
+        />
+      </div>
+      <legend>Additional Questions</legend>
+      <div class="personal-info">
+        <label for="why_work_for_company"
+          >Why do you want to work for this company?</label
+        >
+        <textarea
+          name="why_work_for_company"
+          id="why_work_for_company"
+          cols="30"
+          rows="10"
+          placeholder="Why do you want to work for this company?"
+        ></textarea>
+      </div>
+      <legend>Consent and Agreement</legend>
+      <div class="personal-info">
+        <label for="agree_to_terms">I agree to the terms and conditions</label>
+        <input type="checkbox" name="agree_to_terms" id="agree_to_terms" />
+        <label for="privacy_policy_ack">I acknowledge the Privacy Policy</label>
+        <input
+          type="checkbox"
+          name="privacy_policy_ack"
+          id="privacy_policy_ack"
+        />
+      </div>
+      <button type="submit" id="viewTableBtn">
+        View Applications as Table
+      </button>
+      <table id="applicationsTable">
+        <!-- Table headers -->
+      </table>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

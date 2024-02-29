@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+h6 {
+  font-size: 1.1rem;
+}
+img {
+  width: 200px;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.main {
+  padding: 5% 20%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.intro-container {
+  margin-bottom: 10%;
+}
+.intro-container h1 {
+  background: -webkit-linear-gradient(#c75fff, #830896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info-container div {
+  display: flex;
+}
+.info-container ion-icon {
+  margin-right: 20px;
+}
+.intro-container p {
+  font-size: 2rem;
+}
+
+.profile-container h2 {
+  background: -webkit-linear-gradient(#c75fff, #830896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-color {
+  background: -webkit-linear-gradient(#c75fff, #830896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.rounded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.details-container-first-half {
+  width: 50%;
+  padding: 1% 5%;
+}
+.details-container-second-half {
+  width: 50%;
+  padding: 1% 5%;
+}
+.education-container {
+  margin-top: 20px;
+}
+.employment-history-container {
+  margin-top: 50px;
+}
+.employment-container {
+  margin-top: 20px;
+}
+.employment-points {
+  display: flex;
+  flex-direction: row;
+}
+.employment-history-points {
+  margin-top: 10px;
+}
+.employment-points {
+  margin-top: 20px;
+}
+.skills-container h2 {
+  margin-bottom: 10px;
+}
+.skills-container p {
+  margin-bottom: 5px;
+}
+.personal-projects-container {
+  margin-top: 20px;
+}
+.personal-projects-details-container {
+  margin-top: 10px;
+}
+
+.personal-projects-details-container h6 {
+  font-size: 1.1rem;
+}
+.certificate-details-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.certificate-details-container h6 {
+  margin-right: 5px;
+}
+.certificates-container {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  h6 {
+    font-size: 1.05rem;
+  }
+  .intro-container p {
+    font-size: 1.5rem;
+  }
+  .img-container {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 980px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  .intro-container p {
+    font-size: 1rem;
+  }
+  .img-container {
+    width: 200px;
+    height: 200px;
+  }
+  .main {
+    padding: 5% 15%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .main {
+    padding: 5% 1%;
+  }
+  .details-container-first-half {
+    padding: 1% 2%;
+  }
+  .details-container-second-half {
+    width: 50%;
+    padding: 1% 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .img-container {
+    width: 140px;
+    height: 140px;
+  }
+  .main {
+    padding: 5% 1%;
+  }
+  .details-container-first-half {
+    padding: 1% 2%;
+  }
+  .details-container-second-half {
+    width: 50%;
+    padding: 1% 2%;
+  }
+}
