@@ -19,35 +19,37 @@
                 <ion-icon name="search-outline"></ion-icon>
                 <select>
                   <option value="">Search Offer</option>
-                  <option value=""></option>
-                  <option value=""></option>
                 </select>
               </div>
-              <div>
-                <li><a href="#">HOW IT WORKS</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">SIGN UP</a></li>
-                <li><a href="#">FREELANCER?</a></li>
+              <div class="navigation-links">
+                <ul>
+                  <li><a href="#">HOW IT WORKS</a></li>
+                  <li><a href="#" class="login-tag">LOGIN</a></li>
+                  <li><a href="#">SIGN UP</a></li>
+                  <li><a href="#" id="freelance-tag">FREELANCER?</a></li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="header-container-third">
-            <div class="header-container-third">
-              <a href="">Technology & Programming</a>
-              <a href="">Writing Translation</a>
-              <a href="">Design</a>
-              <a href="">Digital Marketing</a>
-              <a href="">Video, Photo & Image</a>
-              <a href="">Business</a>
-              <a href="">Music & Audio</a>
-              <a href="">Marketing, Branding & Sales </a>
-              <a href="">Social Media</a>
+            <div class="hidden-header-container">
+              <img src="./assets/dashboard-image.png" alt="dashboard image" />
             </div>
-            <div></div>
+          </div>
+
+          <div class="header-container-third">
+            <a href="">Technology & Programming</a>
+            <a href="">Writing Translation</a>
+            <a href="">Design</a>
+            <a href="">Digital Marketing</a>
+            <a href="">Video, Photo & Image</a>
+            <a href="">Business</a>
+            <a href="">Music & Audio</a>
+            <a href="">Marketing, Branding & Sales </a>
+            <a href="">Social Media</a>
           </div>
         </nav>
       </div>
     </header>
+    <!-- **************************** HERO ***************************** -->
     <section>
       <div class="hero-container">
         <div class="hero-container-first-half">
@@ -56,8 +58,19 @@
             Access global talent on the freelancer website trusted by over 1
             million businesses worldwide.
           </p>
-          <input type="text" name="" id="" />
           <div>
+            <input
+              type="text"
+              name="tryweb"
+              id="tryweb"
+              placeholder="Try Web Today"
+            />
+            <button type="submit" class="search-button">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="hero-container-skills-container">
             <p>Popular skills</p>
             <button>wordpress</button>
             <button>business cards</button>
@@ -72,6 +85,18 @@
             width="500"
             height="500"
           />
+        </div>
+        <div class="banner">
+          <div class="profile-card">
+            <img
+              src="./assets/scandikitchen-avatar.jpg"
+              alt="Billie Argent"
+              class="profile-image"
+            />
+            <h3>Billie Argent</h3>
+            <p>Interface Designer</p>
+            <div class="rating">★ 5.0 (117)</div>
+          </div>
         </div>
       </div>
     </section>
@@ -185,11 +210,11 @@
           <ion-icon name="checkmark-outline"></ion-icon>
           <p>Money back guarantee and anti-fraud protection</p>
         </div>
-        <button>START NOW FOR FREE</button>
+        <button><span> START NOW FOR FREE</span></button>
       </div>
       <div class="start-now-second-half">
         <img
-          src="https://source.unsplash.com/random"
+          src="./assets/collage-work--tablet.webp"
           alt="graphic designer"
           sizes="50vw"
           width="400"
@@ -197,7 +222,168 @@
         />
       </div>
     </section>
-    <section class="testimonials-sec"></section>
+    <section class="testimonials-sec">
+      <div class="testimonial">
+        <p>"</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="testimonial-content-align">
+          <img src="./assets/santamaria-avatar.jpg" alt="img1" />
+          <div class="testimonial-content">
+            <p>Ana Rodriguez</p>
+            <p>Santamaria Shirtmakers</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <blockquote>
+          "I've never been happier with a service. It's truly exceptional."
+        </blockquote>
+        <p>
+          Integer commodo est non nunc commodo, vel consectetur lorem fringilla.
+        </p>
+        <div>
+          <img src="./assets/scandikitchen-avatar.jpg" alt="img2" />
+          <div>
+            <p>Bronte Aurell</p>
+            <p>Santamaria Shirtmakers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="freelancer-sec">
+      <h1>Expert freelancers</h1>
+      <p>Search and contact freelancers directly with no obligation</p>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="card-freelancer">
+            <img src="./assets/scandikitchen-avatar.jpg" alt="img2" />
+            <h2>Freelancer Name</h2>
+            <p>Description of the freelancer goes here.</p>
+            <div class="location">
+              <img src="./assets/scandikitchen-avatar.jpg" alt="img2" />
+              <p>Country</p>
+            </div>
+            <div class="rating">
+              <p>Rating: 4.5</p>
+            </div>
+            <div class="tag">
+              <p>Tag</p>
+            </div>
+            <div class="price-tag">
+              <p>$100/hr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>All freelancers</button>
+    </section>
+    <section class="business-sec">
+      <div class="business-sec-1">
+        <div>
+          <h2>3 million</h2>
+          <p>rated freelancers</p>
+        </div>
+        <div>
+          <h2>3 million</h2>
+          <p>rated freelancers</p>
+        </div>
+        <div>
+          <h2>3 million</h2>
+          <p>rated freelancers</p>
+        </div>
+      </div>
+      <div class="business-sec-2">
+        <div class="business-sec-2-left">
+          <p>Grow your business</p>
+          <h1>Trusted globally by over 1 million businesses, small to large</h1>
+          <button>Start for free</button>
+        </div>
+        <div class="business-sec-2-right">
+          <img src="./assets/promo-business--tablet.webp" alt="" />
+        </div>
+      </div>
+      <div class="business-sec-3">
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+        <img src="./assets/collage-work--tablet.webp" alt="" />
+      </div>
+      <div class="business-sec-2">
+        <div class="business-sec-2-left">
+          <p>Grow your business</p>
+          <h1>Trusted globally by over 1 million businesses, small to large</h1>
+          <button>Start for free</button>
+        </div>
+        <div class="business-sec-2-right">
+          <img
+            src="https://dw3i9sxi97owk.cloudfront.net/homepage/businessStats/promo-freelance--desktop.jpg"
+            alt="freelancer-sign-up"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content-1">
+        <img src="./assets/logo-black.png" alt="" />
+      </div>
+      <div class="footer-content-2">
+        <ul class="footer-content-2-1">
+          <p>Product</p>
+          <li>About</li>
+          <li>Team</li>
+          <li>Careers</li>
+        </ul>
+        <ul class="footer-content-2-1">
+          <p>Support</p>
+          <li>How it works</li>
+          <li>Trust & Safety</li>
+          <li>Help Centre</li>
+        </ul>
+        <ul class="footer-content-2-1">
+          <p>Discover</p>
+          <li>Guides</li>
+          <li>Stories</li>
+          <li>News</li>
+        </ul>
+        <ul class="footer-content-2-1">
+          <p>Resources</p>
+          <li>TalentDesk Startup</li>
+          <li>Business Cost Calculator</li>
+          <li>Cities</li>
+        </ul>
+        <ul class="footer-content-2-1">
+          <p>Browse</p>
+          <li>Freelance Services</li>
+          <li>Freelance Services By Country</li>
+          <li>Freelance Skills</li>
+        </ul>
+      </div>
+      <div class="footer-content-3">
+        <img src="./assets/facebook.png" alt="" />
+        <img src="./assets/twitter.png" alt="" />
+        <img src="./assets/linkedin.png" alt="" />
+        <img src="./assets/instagram.png" alt="" />
+      </div>
+      <hr
+        style="
+          margin-top: 20px;
+          height: 2px;
+          border-width: 0;
+          color: gray;
+          background-color: gray;
+        "
+      />
+      <div class="footer-content-4">
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Sitemap</p>
+        <p>Company Details</p>
+        <span>&#169; 2024 People Per Hour Ltd</span>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
